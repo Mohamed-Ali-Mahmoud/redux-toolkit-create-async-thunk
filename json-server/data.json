@@ -1,0 +1,29 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": " Learn JavaScript",
+      "price": 20
+    },
+    {
+      "id": 2,
+      "title": " Learn React",
+      "price": 30
+    },
+    {
+      "id": 3,
+      "title": " Learn Node.js",
+      "price": 25
+    },
+    {
+      "id": 4,
+      "title": " Learn Express.js",
+      "price": 15
+    },
+    {
+      "id": 5,
+      "title": " Learn MongoDB",
+      "price": 35
+    }
+  ]
+}
