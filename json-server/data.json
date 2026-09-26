@@ -1,29 +1,49 @@
 {
   "books": [
     {
-      "id": 1,
+      "id": "1",
       "title": " Learn JavaScript",
       "price": 20
     },
     {
-      "id": 2,
+      "id": "2",
       "title": " Learn React",
       "price": 30
     },
     {
-      "id": 3,
+      "id": "3",
       "title": " Learn Node.js",
       "price": 25
     },
     {
-      "id": 4,
+      "id": "4",
       "title": " Learn Express.js",
       "price": 15
     },
     {
-      "id": 5,
+      "id": "5",
       "title": " Learn MongoDB",
       "price": 35
+    },
+    {
+      "title": "Learn Angular ",
+      "price": "100",
+      "description": "Learn Angular Learn Angular Learn Angular",
+      "id": "JY5ZTq6_BTg"
+    },
+    {
+      "title": "Learn Next js ",
+      "price": "50",
+      "description": "Learn Next js  Learn Next js  Learn Next js ",
+      "id": "rOBff9lpPq4"
+    },
+    {
+      "title": "Learn HTML and CSS",
+      "price": "10",
+      "description": "Learn HTML and CSS",
+      "userName": "Mohamed Ali",
+      "id": "gnJzfMwwZ4s"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
