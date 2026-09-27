@@ -1,16 +1,29 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-// fetch books from the backend
+// side note:
+// createAsyncThunk is a function that allaws you to create an async action.
+// it generates three action types: pending, fulfilled, and rejected.
+// pending: it call tha server and no data is returned yet.
+// fullfilled: the server has returned the data successfully.
+// rejected: the server has returned an error.
+// it takes two arguments:
+// 1. the action type (string) => "book/getBooks".
+// 2. a callback function that returns a promise (async function) => async (args, thunkApi) => {}.
+// the args is the argument that you pass the data to server like bookData when you insert a book.
+// the thunkApi is an object that contains the dispatch, getState, and rejectWithValue functions.
 
 export const getBooks = createAsyncThunk(
   "book/getBooks",
   async (args, thunkApi) => {
+    // rejectWithValue is a function that allows you to return a custom error message when the server returns an error.
     const { rejectWithValue } = thunkApi;
     try {
+      // fetch the data from the server and return it.
       const res = await fetch("http://localhost:3005/books");
       const data = await res.json();
       return data;
     } catch (error) {
+      // if the server returns an error, return the error message using rejectWithValue.
       return rejectWithValue(error.message);
     }
   }
